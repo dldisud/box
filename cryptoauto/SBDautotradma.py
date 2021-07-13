@@ -70,7 +70,7 @@ while True:
                     post_message(myToken,"#crypto", "SBD buy : " +str(buy_result))
         else:
            sbd = get_balance("SBD")
-           if sbd > 0.00008:
+           if sbd > 0.64:
                 sell_result = upbit.sell_market_order("KRW-SBD", sbd*0.9995)
                 post_message(myToken,"#crypto", "SBD buy : " +str(sell_result))
         time.sleep(1)
